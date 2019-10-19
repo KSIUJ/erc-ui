@@ -33,7 +33,7 @@
                     },
                     {
                         text: 'Type',
-                        value: 'type',
+                        value: 'event_type',
                         transform: (val) => TYPES[val],
                     },
                     {
