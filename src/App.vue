@@ -99,5 +99,10 @@
         created() {
             this.$vuetify.theme.dark = true;
         },
+        watch: {
+            '$route' (to, from) {
+                document.title = to.meta.title + ' | ERC KSI' || 'ERC KSI'
+            }
+        },
     });
 </script>

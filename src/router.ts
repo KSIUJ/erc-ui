@@ -17,31 +17,48 @@ export default new Router({
             path: '/',
             name: 'dashboard',
             component: Dashboard,
+            meta: {
+            },
         },
         {
             path: '/members/',
             name: 'members',
             component: Members,
+            meta: {
+                title: 'Members',
+            },
         },
         {
             path: '/periods/',
             name: 'periods',
             component: Periods,
+            meta: {
+                title: 'Periods',
+            },
         },
         {
             path: '/roles/',
             name: 'roles',
             component: Roles,
+            meta: {
+                title: 'Roles',
+            },
         },
         {
             path: '/clients/',
             name: 'clients',
             component: Clients,
+            meta: {
+                title: 'Clients',
+            },
         },
         {
             path: '/authevents/',
             name: 'authevents',
             component: AuthEvents,
+            meta: {
+                title: 'Auth events',
+            },
         },
         {
             path: '*',
