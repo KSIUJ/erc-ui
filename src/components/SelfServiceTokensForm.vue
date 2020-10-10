@@ -1,13 +1,13 @@
 <template>
     <v-form v-model="valid">
-        <v-select
+        <v-autocomplete
                 v-model="item.member"
                 :items="array.members"
                 :item-text="memberName"
                 item-value="id"
                 :counter="64"
                 label="Member"
-        ></v-select>
+        ></v-autocomplete>
         <v-select
                 v-model="item.type"
                 :counter="32"
