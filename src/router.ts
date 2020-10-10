@@ -19,7 +19,9 @@ export default new Router({
             path: '/',
             name: 'dashboard',
             component: Dashboard,
-            meta: {},
+            meta: {
+                title: 'Dashboard',
+            },
         },
         {
             path: '/members/',

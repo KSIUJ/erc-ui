@@ -83,6 +83,8 @@
         >
             <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
             <v-toolbar-title>ERC</v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-btn color="green" :to="'/selfservice/'">Self service</v-btn>
         </v-app-bar>
 
         <v-content>
