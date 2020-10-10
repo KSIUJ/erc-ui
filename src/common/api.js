@@ -12,6 +12,8 @@ const api = {
     roles: apiUrl + 'roles/',
     periods: apiUrl + 'periods/',
     enroll: apiUrl + 'members/enroll_with_membership/',
+    self_service_tokens: apiUrl + 'selfservicetokens/',
+    self_service: apiUrl + 'selfservice/'
 };
 
 export {api}

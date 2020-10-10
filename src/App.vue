@@ -54,6 +54,14 @@
                         <v-list-item-title>Auth events</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
+                <v-list-item :to="'/selfservicetokens/'">
+                  <v-list-item-action>
+                    <v-icon>mdi-lock-reset</v-icon>
+                  </v-list-item-action>
+                  <v-list-item-content>
+                    <v-list-item-title>Self service tokens</v-list-item-title>
+                  </v-list-item-content>
+                </v-list-item>
             </v-list>
             <template v-slot:append>
                 <v-list>
@@ -93,7 +101,7 @@
             source: String,
         },
         data: () => ({
-            drawer: null,
+            drawer: false,
             logoutURl: api.logout,
         }),
         created() {

@@ -6,6 +6,8 @@ import Roles from '@/views/Roles.vue';
 import Clients from '@/views/Clients.vue';
 import AuthEvents from '@/views/AuthEvents.vue';
 import Dashboard from '@/views/Dashboard.vue';
+import SelfServiceTokens from '@/views/SelfServiceTokens.vue';
+import SelfService from '@/views/SelfService.vue';
 
 Vue.use(Router);
 
@@ -17,8 +19,7 @@ export default new Router({
             path: '/',
             name: 'dashboard',
             component: Dashboard,
-            meta: {
-            },
+            meta: {},
         },
         {
             path: '/members/',
@@ -58,6 +59,22 @@ export default new Router({
             component: AuthEvents,
             meta: {
                 title: 'Auth events',
+            },
+        },
+        {
+            path: '/selfservicetokens/',
+            name: 'selfservicetokens',
+            component: SelfServiceTokens,
+            meta: {
+                title: 'Self service tokens',
+            },
+        },
+        {
+            path: '/selfservice',
+            name: 'selfservice',
+            component: SelfService,
+            meta: {
+                title: 'Self service',
             },
         },
         {

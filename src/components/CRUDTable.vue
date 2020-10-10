@@ -25,7 +25,7 @@
                 </v-toolbar>
             </template>
             <template v-slot:item.action="{ item }">
-                <v-btn dark icon @click.stop="editItemDialog(item)">
+                <v-btn v-if="!createonly" dark icon @click.stop="editItemDialog(item)">
                     <v-icon small>mdi-pencil</v-icon>
                 </v-btn>
                 <v-btn dark icon @click.stop="deleteItemDialog(item)">
@@ -110,7 +110,7 @@
                 expanded: [],
             };
         },
-        props: ['urls', 'headers', 'title', 'readonly', 'model', 'expandable'],
+        props: ['urls', 'headers', 'title', 'readonly', 'createonly', 'model', 'expandable'],
         methods: {
             load() {
                 this.array = undefined;

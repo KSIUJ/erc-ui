@@ -19,17 +19,6 @@ let config = {
 
 const _axios = axios.create(config);
 
-_axios.interceptors.request.use(
-    function (config) {
-        // Do something before request is sent
-        return config;
-    },
-    function (error) {
-        // Do something with request error
-        return Promise.reject(error);
-    },
-);
-
 // Add a response interceptor
 _axios.interceptors.response.use(
     function (response) {
@@ -50,6 +39,7 @@ _axios.interceptors.response.use(
 
 Plugin.install = function (Vue, options) {
     Vue.axios = _axios;
+    Vue.axiosDefault = axios.create(config);
     window.axios = _axios;
     Object.defineProperties(Vue.prototype, {
         axios: {
