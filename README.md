@@ -1,6 +1,9 @@
 # erc-ui
 
 ## Project setup
+
+Install NodeJS and yarn. Then run:
+
 ```
 yarn install
 ```
@@ -9,6 +12,10 @@ yarn install
 ```
 yarn run serve
 ```
+
+Server should start on `127.0.0.1:8080`. To login, just open `http://127.0.0.1:8000` in your browser and use your faculty account credentials. 
+
+NOTE: Always use `127.0.0.1`, never `localhost` - the default auth server is configured to redirect to `http://127.0.0.1`.
 
 ### Compiles and minifies for production
 ```
@@ -24,3 +31,4 @@ yarn run test
 ```
 yarn run lint
 ```
+
